@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College Info Nepal</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./assets/Logo (1).svg" />
+    <link rel="icon" href="./assets/nav_logo (1).svg" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -14,10 +14,12 @@
   <body>
     <header>
       <nav>
-        <img src="./assets/nav_logo (1).svg" alt="college-logo" />
+        <div class="logo">
+          <img src="./assets/nav_logo (1).svg" alt="college-logo" />
+        </div>
         <ul>
           <li><a href="#">courses</a></li>
-          <li><a href="#">coleges</a></li>
+          <li><a href="landingpage.html">colleges</a></li>
           <li>
             <select name="information" id="information">
               <option value="Information">Information</option>
@@ -26,14 +28,14 @@
           <li><a href="#">News</a></li>
           <li><a href="#">Notice</a></li>
         </ul>
-
         <div class="search-box">
           <select name="for_college" id="#">
             <option value="for college">ForColleges</option>
           </select>
-          <button>
+          <button class="search">
             <i class="bx bx-search"></i>
           </button>
+          <button class="hamburger"><i class="bx bx-menu"></i></button>
         </div>
       </nav>
     </header>
@@ -44,40 +46,55 @@
       <div class="img2">
         <img src="./assets/hero-img2.png" alt="img2" />
       </div>
-      <h1>
-        YourGateway to Searching <br />
-        <span>Education</span> in Nepal
-      </h1>
+      <div class="hero-heading-txt-wrapper">
+        <div class="hero-heading-txt">
+          <h1>
+            YourGateway to Searching
+            <span class="edu-span">Education</span
+            ><span class="dont-show-in-responsive"> in Nepal</span>
+          </h1>
+        </div>
+      </div>
+
       <p>
         Explore colleges, courses, and resources tailored for your academic
         goals
       </p>
 
-      <div class="input-sec">
-        <button>
-          <i class="bx bx-search"></i>
-        </button>
-        <input
-          type="text"
-          placeholder="Search by college name, course, affliations"
-        />
-        <select name="colleges" id="#">
-          <option value="Colleges">Colleges</option>
-        </select>
+      <div class="input-sec-wrapper">
+        <div class="input-sec">
+          <div class="hero-input-search">
+            <button>
+              <i class="bx bx-search"></i>
+            </button>
+            <input
+              type="text"
+              placeholder="Search by college name, course, affliations"
+            />
+          </div>
+          <select name="colleges" id="#">
+            <option value="Colleges">Colleges</option>
+          </select>
+        </div>
       </div>
     </section>
     <div class="banner-text">
-      <p>
+      <p class="desktop-screen">
         ✦ Planning Your College Journey? Discover Colleges, Courses, News with
         College Info Nepal ✦
+      </p>
+      <p class="mobile-screen">
+        Planning Your College Journey? Discover Colleges, Courses
       </p>
     </div>
     <section class="course-college-sec">
       <div class="college-course-container">
-        <h2>
+        <h2 class="college-course-desktop">
           Unlock educational opportunities tailored for you and stay <br />
           connected with Nepal's academics.
         </h2>
+        <h2 class="college-course-mobile">Unlock educational opportunities</h2>
+
         <div class="row">
           <div class="column">
             <img
@@ -91,7 +108,7 @@
                 needs.
               </p>
             </div>
-            <button>Search College</button>
+            <button class="">Search College</button>
           </div>
           <div class="column">
             <img
@@ -183,6 +200,9 @@
         <h1><span>Colleges</span> that Caught our Attention</h1>
         <img src="./assets/Highlight 8.svg" alt="highlight-icon" />
       </div>
+      <div class="mobile-view-heading">
+        <h1>Colleges that <span>Caught</span> our Attention</h1>
+      </div>
       <!-- <marquee behavior="loop" direction=""></marquee> -->
       <div class="college-logo-slide">
         <div class="college-logo">
@@ -216,21 +236,26 @@
     </section>
     <sectio class="college-search-sec">
       <div class="college-search-container">
-        <div class="content-column">
-          <p>
-            <span><i class="bx bxs-circle"></i></span> Stay on track
-          </p>
-          <div class="h1-p-wrapper">
-            <h1>Tools to <span>Organize</span> Your <br />College Search</h1>
-            <p>Simplify your college search with powerful tools</p>
+        <div class="content-column-wrapper">
+          <div class="content-column">
+            <p>
+              <span><i class="bx bxs-circle"></i></span> Stay on track
+            </p>
+            <div class="h1-p-wrapper">
+              <h1>Tools to <span>Organize</span> Your <br />College Search</h1>
+              <p>Simplify your college search with powerful tools</p>
+            </div>
+            <div class="exp-tool">
+              <button>
+                Explore Tools
+                <span
+                  ><img src="./assets/up_arrow_Icon.svg" alt="up-arrow-icon"
+                /></span>
+              </button>
+            </div>
           </div>
-          <button>
-            Explore Tools
-            <span
-              ><img src="./assets/up_arrow_Icon.svg" alt="up-arrow-icon"
-            /></span>
-          </button>
         </div>
+
         <div class="search-column">
           <div class="search-column-input">
             <button>
@@ -253,9 +278,12 @@
       </div>
     </sectio>
     <div class="banner-text">
-      <p>
+      <p class="desktop-screen">
         ✦ Planning Your College Journey? Discover Colleges, Courses, News with
         College Info Nepal ✦
+      </p>
+      <p class="mobile-screen">
+        Planning Your College Journey? Discover Colleges, Courses
       </p>
     </div>
     <section>
@@ -406,13 +434,23 @@
         </div>
         <div class="lower-footer">
           <img src="./assets/nav_logo (1).svg" alt="" />
-          <p>	&#169; 2024 College Information Nepal. All rights reserved.</p>
+          <p>&#169; 2024 College Information Nepal. All rights reserved.</p>
           <ul>
-            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
-            <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-            <li><a href="#"><i class='bx bxl-messenger' ></i></a></li>
-            <li><a href="#"><i class='bx bxl-linkedin-square' ></i></a></li>
-            <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+            <li>
+              <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-messenger"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-youtube"></i></a>
+            </li>
           </ul>
         </div>
       </div>
