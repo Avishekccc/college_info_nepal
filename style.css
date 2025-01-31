@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Manrope";
 }
+body{
+scroll-behavior: smooth;
+}
 
 :root {
   --heading-color: #374151;
@@ -146,7 +149,9 @@ display: flex;
   margin-top: 2vw;
   border: 1px solid #d1d5db;
   border-radius: 10px;
-  /* width: 35vw; */
+  /* width: 45vw; */
+  overflow: hidden;
+
 }
 
 .input-sec .hero-input-search{
@@ -158,7 +163,7 @@ display: flex;
 .input-sec input {
   border: none;
   outline: none;
-  width: 31vw;
+  width: 35vw;
   font-size: 1rem;
 }
 
@@ -170,12 +175,39 @@ display: flex;
   color: var(--text-color);
 }
 
-.input-sec select {
+.select-search-wrap select {
   background-color: var(--primary-color);
   padding: 8px;
   border-radius: 8px;
   color: var(--nav-text-color);
 }
+
+.select-search-wrap {
+  display: flex;
+  gap: 10px;
+  margin-right: -60px;
+}
+
+
+
+.select-search-wrap:hover{
+  transform: translateX(-55px);
+  overflow:visible;
+  transition: transform 0.5s ease-in-out;
+}
+
+.select-search-wrap .search {
+  /* transform: translateX(0px); */
+  border: none;
+  border-radius: 8px;
+  padding: 7px;
+  width: 3vw;
+  height: 35px;
+  color: var(--nav-text-color);
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+}
+
 
 .banner-text .desktop-screen {
   display: flex;
@@ -389,8 +421,11 @@ display: flex;
 
 .college-logo img:hover{
   width: 220px;
-  transform: scale(1.6);
+  transform: scale(1.8);
    transition: transform 0.5s ease-in-out;
+   /* background: linear-gradient(179.59deg, rgba(217, 217, 217, 0) 6.69%, #414141 94.49%); */
+   /* z-index: 100 */
+;
 
 }
 
