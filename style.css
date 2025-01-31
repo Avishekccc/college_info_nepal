@@ -105,7 +105,7 @@ li select {
   position: absolute;
   top: 22vh;
   /* left: 1330px; */
-  left: 86.2vw;
+  left: 86.7vw;
 }
 
 .hero-heading-txt-wrapper{
@@ -424,15 +424,14 @@ display: flex;
   transform: scale(1.8);
    transition: transform 0.5s ease-in-out;
    /* background: linear-gradient(179.59deg, rgba(217, 217, 217, 0) 6.69%, #414141 94.49%); */
-   /* z-index: 100 */
-;
+   /* z-index: 100 ;*/
 
 }
 
 .slider-sec .next-button button{
   position: absolute;
   top: 145px;
-  left: 1464px;
+  left: 1455px;
   background-color: #97d5fe4d;
   border: none;
   height: 54px;
